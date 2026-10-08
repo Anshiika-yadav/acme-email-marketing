@@ -1,0 +1,663 @@
+// ============================================================
+// MOCK DATA — Acme Technologies Email Marketing Workspace
+// ============================================================
+
+// ── Campaigns ────────────────────────────────────────────────
+export const campaigns = [
+  {
+    id: 'c1',
+    name: 'October Product Update',
+    subject: 'Exciting new features in Acme Suite 4.2',
+    previewText: 'See what\'s new this month...',
+    status: 'sent',
+    audience: 'All Subscribers',
+    audienceCount: 12480,
+    fromName: 'Acme Technologies',
+    fromEmail: 'marketing@acmetechnologies.com',
+    replyTo: 'support@acmetechnologies.com',
+    sent: 12480,
+    delivered: 12301,
+    opens: 4823,
+    uniqueOpens: 4102,
+    clicks: 1237,
+    uniqueClicks: 1089,
+    bounces: 179,
+    unsubscribes: 34,
+    openRate: 33.4,
+    clickRate: 8.9,
+    bounceRate: 1.4,
+    unsubscribeRate: 0.27,
+    scheduledAt: null,
+    sentAt: '2026-10-01T10:00:00Z',
+    updatedAt: '2026-10-01T10:00:00Z',
+    createdAt: '2026-09-28T09:00:00Z',
+    tags: ['product', 'update'],
+    templateId: 't2',
+  },
+  {
+    id: 'c2',
+    name: 'Q4 Customer Newsletter',
+    subject: 'Your Q4 2026 industry roundup from Acme',
+    previewText: 'The latest trends and insights...',
+    status: 'scheduled',
+    audience: 'Newsletter Subscribers',
+    audienceCount: 8940,
+    fromName: 'Acme Technologies',
+    fromEmail: 'newsletter@acmetechnologies.com',
+    replyTo: 'newsletter@acmetechnologies.com',
+    sent: 0,
+    delivered: 0,
+    opens: 0,
+    uniqueOpens: 0,
+    clicks: 0,
+    uniqueClicks: 0,
+    bounces: 0,
+    unsubscribes: 0,
+    openRate: 0,
+    clickRate: 0,
+    bounceRate: 0,
+    unsubscribeRate: 0,
+    scheduledAt: '2026-10-15T08:00:00Z',
+    sentAt: null,
+    updatedAt: '2026-10-07T14:22:00Z',
+    createdAt: '2026-10-04T11:00:00Z',
+    tags: ['newsletter', 'q4'],
+    templateId: 't3',
+  },
+  {
+    id: 'c3',
+    name: 'Black Friday Early Access',
+    subject: 'You\'re invited — Black Friday deals start early',
+    previewText: 'Exclusive early access just for you',
+    status: 'draft',
+    audience: 'Premium Customers',
+    audienceCount: 3200,
+    fromName: 'Acme Technologies',
+    fromEmail: 'promotions@acmetechnologies.com',
+    replyTo: 'marketing@acmetechnologies.com',
+    sent: 0,
+    delivered: 0,
+    opens: 0,
+    uniqueOpens: 0,
+    clicks: 0,
+    uniqueClicks: 0,
+    bounces: 0,
+    unsubscribes: 0,
+    openRate: 0,
+    clickRate: 0,
+    bounceRate: 0,
+    unsubscribeRate: 0,
+    scheduledAt: null,
+    sentAt: null,
+    updatedAt: '2026-10-06T16:45:00Z',
+    createdAt: '2026-10-05T10:00:00Z',
+    tags: ['promotional', 'sale'],
+    templateId: 't4',
+  },
+  {
+    id: 'c4',
+    name: 'September Feature Spotlight',
+    subject: 'Meet the Acme Analytics Dashboard',
+    previewText: 'Deep dive into your new analytics tools',
+    status: 'sent',
+    audience: 'Active Users',
+    audienceCount: 9870,
+    fromName: 'Acme Technologies',
+    fromEmail: 'marketing@acmetechnologies.com',
+    replyTo: 'support@acmetechnologies.com',
+    sent: 9870,
+    delivered: 9742,
+    opens: 3892,
+    uniqueOpens: 3401,
+    clicks: 982,
+    uniqueClicks: 876,
+    bounces: 128,
+    unsubscribes: 28,
+    openRate: 34.9,
+    clickRate: 9.0,
+    bounceRate: 1.3,
+    unsubscribeRate: 0.28,
+    scheduledAt: null,
+    sentAt: '2026-09-05T10:00:00Z',
+    updatedAt: '2026-09-05T10:00:00Z',
+    createdAt: '2026-09-01T09:00:00Z',
+    tags: ['product', 'feature'],
+    templateId: 't2',
+  },
+  {
+    id: 'c5',
+    name: 'Welcome Series — Day 1',
+    subject: 'Welcome to Acme Technologies 👋',
+    previewText: 'Here\'s how to get started',
+    status: 'sent',
+    audience: 'New Signups',
+    audienceCount: 1240,
+    fromName: 'Sarah Mitchell',
+    fromEmail: 'sarah@acmetechnologies.com',
+    replyTo: 'onboarding@acmetechnologies.com',
+    sent: 1240,
+    delivered: 1238,
+    opens: 876,
+    uniqueOpens: 801,
+    clicks: 543,
+    uniqueClicks: 489,
+    bounces: 2,
+    unsubscribes: 4,
+    openRate: 64.7,
+    clickRate: 39.5,
+    bounceRate: 0.16,
+    unsubscribeRate: 0.32,
+    scheduledAt: null,
+    sentAt: '2026-10-03T09:00:00Z',
+    updatedAt: '2026-10-03T09:00:00Z',
+    createdAt: '2026-10-01T11:00:00Z',
+    tags: ['onboarding', 'welcome'],
+    templateId: 't1',
+  },
+  {
+    id: 'c6',
+    name: 'Webinar Invitation — Nov 2026',
+    subject: 'Join us: Mastering Acme Suite in 60 minutes',
+    previewText: 'Free live webinar on November 12th',
+    status: 'draft',
+    audience: 'All Contacts',
+    audienceCount: 15620,
+    fromName: 'Acme Technologies Events',
+    fromEmail: 'events@acmetechnologies.com',
+    replyTo: 'events@acmetechnologies.com',
+    sent: 0,
+    delivered: 0,
+    opens: 0,
+    uniqueOpens: 0,
+    clicks: 0,
+    uniqueClicks: 0,
+    bounces: 0,
+    unsubscribes: 0,
+    openRate: 0,
+    clickRate: 0,
+    bounceRate: 0,
+    unsubscribeRate: 0,
+    scheduledAt: null,
+    sentAt: null,
+    updatedAt: '2026-10-07T11:15:00Z',
+    createdAt: '2026-10-07T09:00:00Z',
+    tags: ['event', 'webinar'],
+    templateId: 't5',
+  },
+  {
+    id: 'c7',
+    name: 'Customer Satisfaction Survey',
+    subject: 'Quick question — how are we doing?',
+    previewText: 'Share your feedback in 2 minutes',
+    status: 'archived',
+    audience: 'Active Customers',
+    audienceCount: 7320,
+    fromName: 'Acme Technologies',
+    fromEmail: 'feedback@acmetechnologies.com',
+    replyTo: 'feedback@acmetechnologies.com',
+    sent: 7320,
+    delivered: 7198,
+    opens: 2876,
+    uniqueOpens: 2540,
+    clicks: 1432,
+    uniqueClicks: 1298,
+    bounces: 122,
+    unsubscribes: 18,
+    openRate: 35.3,
+    clickRate: 18.0,
+    bounceRate: 1.67,
+    unsubscribeRate: 0.24,
+    scheduledAt: null,
+    sentAt: '2026-08-15T10:00:00Z',
+    updatedAt: '2026-08-15T10:00:00Z',
+    createdAt: '2026-08-10T09:00:00Z',
+    tags: ['survey', 'feedback'],
+    templateId: 't6',
+  },
+];
+
+// ── Contacts ─────────────────────────────────────────────────
+export const contacts = [
+  { id: 'con1', firstName: 'Emily', lastName: 'Chen', email: 'emily.chen@nexuscorp.com', phone: '+1 415-555-0182', company: 'Nexus Corp', status: 'subscribed', tags: ['enterprise', 'premium'], source: 'Import', joinedAt: '2025-03-12T00:00:00Z', lastActivity: '2026-10-01T14:32:00Z', location: 'San Francisco, CA' },
+  { id: 'con2', firstName: 'Marcus', lastName: 'Rivera', email: 'marcus.r@brightwave.io', phone: '+1 312-555-0247', company: 'Brightwave', status: 'subscribed', tags: ['smb', 'trial'], source: 'Website Form', joinedAt: '2025-06-20T00:00:00Z', lastActivity: '2026-10-03T09:15:00Z', location: 'Chicago, IL' },
+  { id: 'con3', firstName: 'Sarah', lastName: 'Thompson', email: 's.thompson@deltahealth.com', phone: '+1 212-555-0334', company: 'Delta Health', status: 'subscribed', tags: ['healthcare', 'enterprise'], source: 'API', joinedAt: '2025-01-08T00:00:00Z', lastActivity: '2026-09-30T11:00:00Z', location: 'New York, NY' },
+  { id: 'con4', firstName: 'James', lastName: 'Okafor', email: 'jokafor@meridianfin.com', phone: '+1 617-555-0419', company: 'Meridian Finance', status: 'unsubscribed', tags: ['finance'], source: 'Import', joinedAt: '2025-02-14T00:00:00Z', lastActivity: '2026-07-22T08:45:00Z', location: 'Boston, MA' },
+  { id: 'con5', firstName: 'Priya', lastName: 'Sharma', email: 'priya.sharma@cloudstack.dev', phone: '+1 408-555-0561', company: 'CloudStack', status: 'subscribed', tags: ['tech', 'developer'], source: 'Website Form', joinedAt: '2026-01-15T00:00:00Z', lastActivity: '2026-10-06T16:20:00Z', location: 'San Jose, CA' },
+  { id: 'con6', firstName: 'Daniel', lastName: 'Kovacs', email: 'd.kovacs@eurotrade.eu', phone: '+44 20-5555-0672', company: 'Eurotrade GmbH', status: 'subscribed', tags: ['enterprise', 'europe'], source: 'Import', joinedAt: '2025-09-03T00:00:00Z', lastActivity: '2026-10-02T13:10:00Z', location: 'Berlin, DE' },
+  { id: 'con7', firstName: 'Aisha', lastName: 'Williams', email: 'aisha.w@startuplab.co', phone: '+1 720-555-0783', company: 'Startup Lab', status: 'subscribed', tags: ['startup', 'smb'], source: 'Webinar', joinedAt: '2026-03-21T00:00:00Z', lastActivity: '2026-10-05T10:45:00Z', location: 'Denver, CO' },
+  { id: 'con8', firstName: 'Robert', lastName: 'Nakamura', email: 'rnakamura@pacific-logistics.com', phone: '+1 503-555-0894', company: 'Pacific Logistics', status: 'bounced', tags: ['logistics'], source: 'Import', joinedAt: '2025-05-18T00:00:00Z', lastActivity: '2026-04-15T07:30:00Z', location: 'Portland, OR' },
+  { id: 'con9', firstName: 'Lauren', lastName: 'Fitzgerald', email: 'lfitz@greenbuild.com', phone: '+1 512-555-0935', company: 'Green Build Co.', status: 'subscribed', tags: ['construction', 'smb'], source: 'Website Form', joinedAt: '2026-05-10T00:00:00Z', lastActivity: '2026-10-04T15:00:00Z', location: 'Austin, TX' },
+  { id: 'con10', firstName: 'Ahmad', lastName: 'Al-Rashid', email: 'aaralshid@globalenergy.ae', phone: '+971 4-555-1047', company: 'Global Energy ME', status: 'subscribed', tags: ['enterprise', 'energy'], source: 'Trade Show', joinedAt: '2025-11-29T00:00:00Z', lastActivity: '2026-10-01T08:00:00Z', location: 'Dubai, UAE' },
+  { id: 'con11', firstName: 'Monica', lastName: 'Perez', email: 'monica.p@retailnova.com', phone: '+1 786-555-1158', company: 'Retail Nova', status: 'subscribed', tags: ['retail', 'premium'], source: 'API', joinedAt: '2025-07-07T00:00:00Z', lastActivity: '2026-09-29T17:45:00Z', location: 'Miami, FL' },
+  { id: 'con12', firstName: 'Kevin', lastName: 'Park', email: 'kpark@innovatech.kr', phone: '+82 2-555-1269', company: 'InnovaTech Korea', status: 'subscribed', tags: ['tech', 'enterprise'], source: 'Conference', joinedAt: '2026-02-28T00:00:00Z', lastActivity: '2026-10-06T11:30:00Z', location: 'Seoul, KR' },
+];
+
+// ── Segments ─────────────────────────────────────────────────
+export const segments = [
+  {
+    id: 'seg1',
+    name: 'Enterprise Customers',
+    description: 'All contacts tagged as enterprise with active subscriptions',
+    contactCount: 2840,
+    conditions: [
+      { field: 'tag', operator: 'is', value: 'enterprise' },
+      { field: 'status', operator: 'is', value: 'subscribed' },
+    ],
+    updatedAt: '2026-10-05T09:00:00Z',
+    createdAt: '2025-06-01T09:00:00Z',
+  },
+  {
+    id: 'seg2',
+    name: 'Newsletter Subscribers',
+    description: 'Contacts opted into the monthly newsletter',
+    contactCount: 8940,
+    conditions: [
+      { field: 'tag', operator: 'is', value: 'newsletter' },
+      { field: 'status', operator: 'is', value: 'subscribed' },
+    ],
+    updatedAt: '2026-10-03T14:00:00Z',
+    createdAt: '2025-03-15T09:00:00Z',
+  },
+  {
+    id: 'seg3',
+    name: 'High Engagement',
+    description: 'Contacts who opened 3+ campaigns in the last 90 days',
+    contactCount: 4120,
+    conditions: [
+      { field: 'opens', operator: 'greater_than', value: '3' },
+      { field: 'last_activity', operator: 'within', value: '90 days' },
+    ],
+    updatedAt: '2026-10-01T10:00:00Z',
+    createdAt: '2025-09-01T09:00:00Z',
+  },
+  {
+    id: 'seg4',
+    name: 'At-Risk Contacts',
+    description: 'Subscribed contacts with no activity in over 60 days',
+    contactCount: 1870,
+    conditions: [
+      { field: 'status', operator: 'is', value: 'subscribed' },
+      { field: 'last_activity', operator: 'more_than', value: '60 days' },
+    ],
+    updatedAt: '2026-09-30T08:00:00Z',
+    createdAt: '2025-10-15T09:00:00Z',
+  },
+  {
+    id: 'seg5',
+    name: 'Premium Customers',
+    description: 'Contacts tagged premium across all regions',
+    contactCount: 3200,
+    conditions: [
+      { field: 'tag', operator: 'is', value: 'premium' },
+    ],
+    updatedAt: '2026-10-04T11:30:00Z',
+    createdAt: '2025-04-10T09:00:00Z',
+  },
+  {
+    id: 'seg6',
+    name: 'New Signups — Last 30 Days',
+    description: 'Contacts who joined in the last 30 days',
+    contactCount: 412,
+    conditions: [
+      { field: 'joined', operator: 'within', value: '30 days' },
+    ],
+    updatedAt: '2026-10-07T00:00:00Z',
+    createdAt: '2026-09-07T09:00:00Z',
+  },
+];
+
+// ── Templates ─────────────────────────────────────────────────
+export const templates = [
+  {
+    id: 't1',
+    name: 'Welcome Email',
+    description: 'Onboarding email for new subscribers',
+    category: 'Onboarding',
+    thumbnail: null,
+    updatedAt: '2026-09-15T10:00:00Z',
+    createdAt: '2025-01-10T09:00:00Z',
+    blocks: [
+      { id: 'b1', type: 'image', content: { src: '', alt: 'Acme Technologies Logo', width: 160, align: 'center' } },
+      { id: 'b2', type: 'text', content: { html: '<h1 style="color:#1e2a3a;font-size:28px;font-weight:700;text-align:center;">Welcome to Acme Technologies</h1>' } },
+      { id: 'b3', type: 'text', content: { html: '<p style="color:#4a5568;font-size:16px;line-height:1.7;text-align:center;">We\'re excited to have you on board. Acme Suite gives your team everything they need to work smarter and grow faster.</p>' } },
+      { id: 'b4', type: 'button', content: { label: 'Get Started', url: '#', align: 'center', bgColor: '#c0392b', textColor: '#ffffff', borderRadius: 6 } },
+      { id: 'b5', type: 'divider', content: {} },
+      { id: 'b6', type: 'text', content: { html: '<p style="color:#718096;font-size:13px;text-align:center;">Acme Technologies · 100 Innovation Drive, San Francisco, CA 94105<br><a href="#" style="color:#c0392b;">Unsubscribe</a> · <a href="#" style="color:#c0392b;">Privacy Policy</a></p>' } },
+    ],
+  },
+  {
+    id: 't2',
+    name: 'Product Update',
+    description: 'Monthly product news and feature announcements',
+    category: 'Product',
+    thumbnail: null,
+    updatedAt: '2026-10-01T09:00:00Z',
+    createdAt: '2025-02-18T09:00:00Z',
+    blocks: [
+      { id: 'b1', type: 'image', content: { src: '', alt: 'Acme Technologies Logo', width: 160, align: 'center' } },
+      { id: 'b2', type: 'text', content: { html: '<h1 style="color:#1e2a3a;font-size:26px;font-weight:700;">October Product Update</h1>' } },
+      { id: 'b3', type: 'text', content: { html: '<p style="color:#4a5568;font-size:16px;line-height:1.7;">We have exciting updates for you this month. Our team has been working hard to deliver improvements across the entire Acme Suite platform.</p>' } },
+      { id: 'b4', type: 'text', content: { html: '<h2 style="color:#1e2a3a;font-size:20px;font-weight:600;">What\'s New</h2><ul style="color:#4a5568;font-size:15px;line-height:1.8;"><li>Redesigned Analytics Dashboard with real-time data</li><li>Bulk contact import now supports up to 50,000 records</li><li>Automation builder — new branching conditions</li><li>API rate limits increased for enterprise plans</li></ul>' } },
+      { id: 'b5', type: 'button', content: { label: 'View Full Release Notes', url: '#', align: 'left', bgColor: '#c0392b', textColor: '#ffffff', borderRadius: 6 } },
+      { id: 'b6', type: 'divider', content: {} },
+      { id: 'b7', type: 'text', content: { html: '<p style="color:#718096;font-size:13px;">Thank you,<br><strong>The Acme Technologies Team</strong></p>' } },
+      { id: 'b8', type: 'text', content: { html: '<p style="color:#718096;font-size:12px;text-align:center;">Acme Technologies · 100 Innovation Drive, San Francisco, CA 94105<br><a href="#" style="color:#c0392b;">Unsubscribe</a></p>' } },
+    ],
+  },
+  {
+    id: 't3',
+    name: 'Newsletter',
+    description: 'Monthly industry newsletter layout',
+    category: 'Newsletter',
+    thumbnail: null,
+    updatedAt: '2026-09-20T14:00:00Z',
+    createdAt: '2025-03-05T09:00:00Z',
+    blocks: [
+      { id: 'b1', type: 'image', content: { src: '', alt: 'Acme Newsletter', width: 160, align: 'center' } },
+      { id: 'b2', type: 'text', content: { html: '<h1 style="color:#1e2a3a;font-size:24px;font-weight:700;text-align:center;">Q4 2026 Industry Roundup</h1>' } },
+      { id: 'b3', type: 'text', content: { html: '<p style="color:#4a5568;font-size:15px;line-height:1.7;">Welcome to your quarterly digest of the trends, tools, and news shaping the enterprise software landscape.</p>' } },
+      { id: 'b4', type: 'divider', content: {} },
+      { id: 'b5', type: 'text', content: { html: '<h2 style="color:#1e2a3a;font-size:18px;font-weight:600;">In This Issue</h2><p style="color:#4a5568;font-size:15px;line-height:1.7;">• AI adoption in enterprise workflows<br>• The shift to composable architecture<br>• Case Study: How Delta Health reduced costs by 32%<br>• Upcoming Acme webinars and events</p>' } },
+      { id: 'b6', type: 'button', content: { label: 'Read Full Newsletter', url: '#', align: 'center', bgColor: '#1e2a3a', textColor: '#ffffff', borderRadius: 6 } },
+      { id: 'b7', type: 'divider', content: {} },
+      { id: 'b8', type: 'text', content: { html: '<p style="color:#718096;font-size:12px;text-align:center;">Acme Technologies · <a href="#" style="color:#c0392b;">Unsubscribe</a></p>' } },
+    ],
+  },
+  {
+    id: 't4',
+    name: 'Promotional',
+    description: 'Sales and promotional campaign template',
+    category: 'Promotional',
+    thumbnail: null,
+    updatedAt: '2026-09-10T11:00:00Z',
+    createdAt: '2025-04-22T09:00:00Z',
+    blocks: [
+      { id: 'b1', type: 'image', content: { src: '', alt: 'Acme Sale', width: 200, align: 'center' } },
+      { id: 'b2', type: 'text', content: { html: '<h1 style="color:#c0392b;font-size:32px;font-weight:800;text-align:center;">Black Friday Early Access</h1>' } },
+      { id: 'b3', type: 'text', content: { html: '<p style="color:#1e2a3a;font-size:20px;font-weight:600;text-align:center;">Save up to 40% on Acme Suite</p>' } },
+      { id: 'b4', type: 'text', content: { html: '<p style="color:#4a5568;font-size:15px;line-height:1.7;text-align:center;">Exclusive early access for our valued customers. Upgrade your plan before November 29 and lock in savings for the full year.</p>' } },
+      { id: 'b5', type: 'button', content: { label: 'Claim Your Discount', url: '#', align: 'center', bgColor: '#c0392b', textColor: '#ffffff', borderRadius: 6 } },
+      { id: 'b6', type: 'divider', content: {} },
+      { id: 'b7', type: 'text', content: { html: '<p style="color:#718096;font-size:12px;text-align:center;">Offer valid Nov 1–29, 2026. Terms apply. · <a href="#" style="color:#c0392b;">Unsubscribe</a></p>' } },
+    ],
+  },
+  {
+    id: 't5',
+    name: 'Event Invitation',
+    description: 'Webinar and event invitation template',
+    category: 'Event',
+    thumbnail: null,
+    updatedAt: '2026-08-30T10:00:00Z',
+    createdAt: '2025-05-14T09:00:00Z',
+    blocks: [
+      { id: 'b1', type: 'image', content: { src: '', alt: 'Acme Webinar', width: 160, align: 'center' } },
+      { id: 'b2', type: 'text', content: { html: '<h1 style="color:#1e2a3a;font-size:26px;font-weight:700;text-align:center;">You\'re Invited</h1>' } },
+      { id: 'b3', type: 'text', content: { html: '<p style="color:#4a5568;font-size:16px;text-align:center;line-height:1.7;">Join us for a live 60-minute webinar:<br><strong style="color:#1e2a3a;">Mastering Acme Suite — Tips, Tricks & Roadmap</strong></p>' } },
+      { id: 'b4', type: 'text', content: { html: '<p style="color:#4a5568;font-size:15px;text-align:center;">📅 November 12, 2026 &nbsp;|&nbsp; 2:00 PM EST</p>' } },
+      { id: 'b5', type: 'button', content: { label: 'Register Now', url: '#', align: 'center', bgColor: '#c0392b', textColor: '#ffffff', borderRadius: 6 } },
+      { id: 'b6', type: 'divider', content: {} },
+      { id: 'b7', type: 'text', content: { html: '<p style="color:#718096;font-size:12px;text-align:center;">Acme Technologies · <a href="#" style="color:#c0392b;">Unsubscribe</a></p>' } },
+    ],
+  },
+  {
+    id: 't6',
+    name: 'Customer Update',
+    description: 'General customer communications template',
+    category: 'Transactional',
+    thumbnail: null,
+    updatedAt: '2026-07-15T09:00:00Z',
+    createdAt: '2025-07-01T09:00:00Z',
+    blocks: [
+      { id: 'b1', type: 'image', content: { src: '', alt: 'Acme Technologies', width: 160, align: 'center' } },
+      { id: 'b2', type: 'text', content: { html: '<h1 style="color:#1e2a3a;font-size:24px;font-weight:700;">Important Update</h1>' } },
+      { id: 'b3', type: 'text', content: { html: '<p style="color:#4a5568;font-size:15px;line-height:1.7;">We\'re reaching out with an important update regarding your Acme account. Please review the details below and let us know if you have any questions.</p>' } },
+      { id: 'b4', type: 'button', content: { label: 'View Details', url: '#', align: 'left', bgColor: '#1e2a3a', textColor: '#ffffff', borderRadius: 6 } },
+      { id: 'b5', type: 'divider', content: {} },
+      { id: 'b6', type: 'text', content: { html: '<p style="color:#718096;font-size:13px;">Acme Technologies Support Team<br>support@acmetechnologies.com</p>' } },
+      { id: 'b7', type: 'text', content: { html: '<p style="color:#718096;font-size:12px;text-align:center;"><a href="#" style="color:#c0392b;">Unsubscribe</a></p>' } },
+    ],
+  },
+];
+
+// ── Automations ───────────────────────────────────────────────
+export const automations = [
+  {
+    id: 'auto1',
+    name: 'New Subscriber Welcome Series',
+    trigger: 'Contact joins segment',
+    triggerDetail: 'New Signups — Last 30 Days',
+    status: 'active',
+    contactsEnrolled: 412,
+    lastActivity: '2026-10-07T14:00:00Z',
+    updatedAt: '2026-09-20T10:00:00Z',
+    nodes: [
+      { id: 'n1', type: 'trigger', label: 'Trigger', config: { event: 'Contact joins segment', segment: 'New Signups — Last 30 Days' } },
+      { id: 'n2', type: 'email', label: 'Send Email', config: { templateId: 't1', subject: 'Welcome to Acme Technologies 👋', fromName: 'Sarah Mitchell', fromEmail: 'sarah@acmetechnologies.com' } },
+      { id: 'n3', type: 'wait', label: 'Wait', config: { amount: 2, unit: 'days' } },
+      { id: 'n4', type: 'condition', label: 'Condition', config: { field: 'opened_email', operator: 'is', value: 'true' } },
+      { id: 'n5', type: 'email', label: 'Send Email', config: { templateId: 't2', subject: 'Getting the most from Acme Suite', fromName: 'Acme Technologies', fromEmail: 'onboarding@acmetechnologies.com' } },
+      { id: 'n6', type: 'tag', label: 'Add Tag', config: { tag: 'onboarded' } },
+    ],
+  },
+  {
+    id: 'auto2',
+    name: 'Re-engagement Campaign',
+    trigger: 'Last activity',
+    triggerDetail: 'No activity for 60+ days',
+    status: 'active',
+    contactsEnrolled: 1870,
+    lastActivity: '2026-10-06T09:00:00Z',
+    updatedAt: '2026-10-01T11:00:00Z',
+    nodes: [
+      { id: 'n1', type: 'trigger', label: 'Trigger', config: { event: 'Tag added', tag: 'at-risk' } },
+      { id: 'n2', type: 'email', label: 'Send Email', config: { templateId: 't6', subject: 'We miss you — here\'s what\'s new at Acme', fromName: 'Acme Technologies', fromEmail: 'marketing@acmetechnologies.com' } },
+      { id: 'n3', type: 'wait', label: 'Wait', config: { amount: 7, unit: 'days' } },
+      { id: 'n4', type: 'condition', label: 'Condition', config: { field: 'opened_email', operator: 'is', value: 'false' } },
+      { id: 'n5', type: 'email', label: 'Send Email', config: { templateId: 't4', subject: 'Last chance — exclusive offer inside', fromName: 'Acme Technologies', fromEmail: 'marketing@acmetechnologies.com' } },
+      { id: 'n6', type: 'tag', label: 'Add Tag', config: { tag: 'churned' } },
+    ],
+  },
+  {
+    id: 'auto3',
+    name: 'Post-Purchase Follow-up',
+    trigger: 'Tag added',
+    triggerDetail: 'Tag: new-customer',
+    status: 'paused',
+    contactsEnrolled: 284,
+    lastActivity: '2026-09-15T10:00:00Z',
+    updatedAt: '2026-09-15T10:00:00Z',
+    nodes: [
+      { id: 'n1', type: 'trigger', label: 'Trigger', config: { event: 'Tag added', tag: 'new-customer' } },
+      { id: 'n2', type: 'wait', label: 'Wait', config: { amount: 1, unit: 'days' } },
+      { id: 'n3', type: 'email', label: 'Send Email', config: { templateId: 't1', subject: 'Your Acme account is ready', fromName: 'Acme Onboarding', fromEmail: 'onboarding@acmetechnologies.com' } },
+      { id: 'n4', type: 'tag', label: 'Add Tag', config: { tag: 'onboarding-started' } },
+    ],
+  },
+  {
+    id: 'auto4',
+    name: 'Webinar Reminder Sequence',
+    trigger: 'Form submitted',
+    triggerDetail: 'Webinar Registration Form',
+    status: 'draft',
+    contactsEnrolled: 0,
+    lastActivity: null,
+    updatedAt: '2026-10-07T11:00:00Z',
+    nodes: [
+      { id: 'n1', type: 'trigger', label: 'Trigger', config: { event: 'Form submitted', form: 'Webinar Registration Form' } },
+      { id: 'n2', type: 'email', label: 'Send Email', config: { templateId: 't5', subject: 'You\'re registered! Webinar details inside', fromName: 'Acme Events', fromEmail: 'events@acmetechnologies.com' } },
+      { id: 'n3', type: 'wait', label: 'Wait', config: { amount: 6, unit: 'days' } },
+      { id: 'n4', type: 'email', label: 'Send Email', config: { templateId: 't5', subject: 'Reminder: Webinar is tomorrow', fromName: 'Acme Events', fromEmail: 'events@acmetechnologies.com' } },
+      { id: 'n5', type: 'tag', label: 'Add Tag', config: { tag: 'webinar-attendee' } },
+    ],
+  },
+];
+
+// ── Forms ─────────────────────────────────────────────────────
+export const forms = [
+  {
+    id: 'f1',
+    name: 'Newsletter Signup',
+    type: 'Inline',
+    status: 'published',
+    submissions: 4820,
+    conversionRate: 12.4,
+    updatedAt: '2026-09-25T10:00:00Z',
+    fields: [
+      { id: 'ff1', type: 'text', label: 'First Name', required: true, placeholder: 'Enter your first name' },
+      { id: 'ff2', type: 'text', label: 'Last Name', required: false, placeholder: 'Enter your last name' },
+      { id: 'ff3', type: 'email', label: 'Email Address', required: true, placeholder: 'your@email.com' },
+      { id: 'ff4', type: 'checkbox', label: 'I agree to receive marketing emails', required: true },
+    ],
+  },
+  {
+    id: 'f2',
+    name: 'Webinar Registration',
+    type: 'Popup',
+    status: 'published',
+    submissions: 1247,
+    conversionRate: 8.7,
+    updatedAt: '2026-10-07T11:00:00Z',
+    fields: [
+      { id: 'ff1', type: 'text', label: 'First Name', required: true, placeholder: 'First name' },
+      { id: 'ff2', type: 'text', label: 'Last Name', required: true, placeholder: 'Last name' },
+      { id: 'ff3', type: 'email', label: 'Work Email', required: true, placeholder: 'work@company.com' },
+      { id: 'ff4', type: 'text', label: 'Company', required: true, placeholder: 'Your company name' },
+      { id: 'ff5', type: 'select', label: 'Job Title', required: false, placeholder: 'Select your role' },
+    ],
+  },
+  {
+    id: 'f3',
+    name: 'Product Demo Request',
+    type: 'Embedded',
+    status: 'published',
+    submissions: 892,
+    conversionRate: 6.2,
+    updatedAt: '2026-09-14T09:00:00Z',
+    fields: [
+      { id: 'ff1', type: 'text', label: 'Full Name', required: true, placeholder: 'Your full name' },
+      { id: 'ff2', type: 'email', label: 'Email Address', required: true, placeholder: 'your@email.com' },
+      { id: 'ff3', type: 'text', label: 'Phone Number', required: false, placeholder: '+1 (555) 000-0000' },
+      { id: 'ff4', type: 'text', label: 'Company', required: true, placeholder: 'Company name' },
+    ],
+  },
+  {
+    id: 'f4',
+    name: 'Customer Satisfaction Survey',
+    type: 'Inline',
+    status: 'draft',
+    submissions: 0,
+    conversionRate: 0,
+    updatedAt: '2026-10-06T15:00:00Z',
+    fields: [
+      { id: 'ff1', type: 'email', label: 'Email Address', required: true, placeholder: 'your@email.com' },
+      { id: 'ff2', type: 'select', label: 'How satisfied are you?', required: true, placeholder: 'Select rating' },
+      { id: 'ff3', type: 'textarea', label: 'Any additional feedback?', required: false, placeholder: 'Share your thoughts...' },
+    ],
+  },
+  {
+    id: 'f5',
+    name: 'Early Access Signup',
+    type: 'Popup',
+    status: 'paused',
+    submissions: 2103,
+    conversionRate: 18.9,
+    updatedAt: '2026-08-20T10:00:00Z',
+    fields: [
+      { id: 'ff1', type: 'email', label: 'Email Address', required: true, placeholder: 'your@email.com' },
+      { id: 'ff2', type: 'text', label: 'Company Name', required: false, placeholder: 'Optional' },
+    ],
+  },
+];
+
+// ── Analytics / Chart Data ────────────────────────────────────
+const generateDailyData = (days, baseOpens, baseSends, baseClicks) => {
+  const data = [];
+  const now = new Date('2026-10-08');
+  for (let i = days - 1; i >= 0; i--) {
+    const date = new Date(now);
+    date.setDate(now.getDate() - i);
+    const label = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const sends = Math.round(baseSends + (Math.random() - 0.5) * baseSends * 0.4);
+    const opens = Math.round(sends * (baseOpens / 100) * (0.8 + Math.random() * 0.4));
+    const clicks = Math.round(opens * (baseClicks / 100) * (0.8 + Math.random() * 0.4));
+    data.push({ date: label, sends, opens, clicks });
+  }
+  return data;
+};
+
+export const analyticsData = {
+  '7d': generateDailyData(7, 33, 1800, 27),
+  '30d': generateDailyData(30, 33, 1200, 27),
+  '90d': generateDailyData(90, 32, 900, 26),
+};
+
+export const deviceData = [
+  { name: 'Desktop', value: 52 },
+  { name: 'Mobile', value: 38 },
+  { name: 'Tablet', value: 10 },
+];
+
+export const engagementData = [
+  { name: 'Opened', value: 33 },
+  { name: 'Clicked', value: 9 },
+  { name: 'Did Not Open', value: 58 },
+];
+
+export const audienceGrowthData = (() => {
+  const data = [];
+  let count = 11200;
+  const months = ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'];
+  months.forEach(m => {
+    count += Math.round(300 + Math.random() * 400);
+    data.push({ month: m, contacts: count });
+  });
+  return data;
+})();
+
+// ── Notifications ─────────────────────────────────────────────
+export const notifications = [
+  { id: 'n1', type: 'success', title: 'Campaign scheduled', message: '"Q4 Customer Newsletter" is scheduled for Oct 15', time: '2 hours ago', read: false },
+  { id: 'n2', type: 'info', title: 'Import complete', message: '250 contacts imported successfully', time: '5 hours ago', read: false },
+  { id: 'n3', type: 'success', title: 'Automation activated', message: '"Re-engagement Campaign" is now active', time: 'Yesterday', read: false },
+  { id: 'n4', type: 'warning', title: 'High bounce rate', message: '"September Feature Spotlight" bounce rate is 1.3%', time: '2 days ago', read: true },
+  { id: 'n5', type: 'info', title: 'Template updated', message: '"Product Update" template was saved', time: '3 days ago', read: true },
+];
+
+// ── Recent Activity ────────────────────────────────────────────
+export const recentActivities = [
+  { id: 'a1', icon: 'send', text: 'Campaign "October Product Update" was sent to 12,480 contacts', time: '7 days ago', category: 'campaign' },
+  { id: 'a2', icon: 'calendar', text: 'Campaign "Q4 Customer Newsletter" was scheduled for Oct 15', time: '1 day ago', category: 'campaign' },
+  { id: 'a3', icon: 'users', text: '250 new contacts imported via CSV', time: '5 hours ago', category: 'contacts' },
+  { id: 'a4', icon: 'zap', text: 'Automation "New Subscriber Welcome Series" enrolled 12 new contacts', time: '3 hours ago', category: 'automation' },
+  { id: 'a5', icon: 'file-text', text: 'Template "Product Update" was updated by Sarah Mitchell', time: '2 days ago', category: 'template' },
+  { id: 'a6', icon: 'users', text: 'Segment "High Engagement" refreshed — 4,120 contacts', time: '1 day ago', category: 'segment' },
+  { id: 'a7', icon: 'zap', text: 'Automation "Re-engagement Campaign" activated', time: '7 days ago', category: 'automation' },
+  { id: 'a8', icon: 'bar-chart', text: 'Campaign "Welcome Series — Day 1" achieved 64.7% open rate', time: '5 days ago', category: 'campaign' },
+];
+
+// ── KPI Summary ───────────────────────────────────────────────
+export const kpiSummary = {
+  totalContacts: 15620,
+  activeCampaigns: 2,
+  emailsSent: 30910,
+  avgOpenRate: 33.4,
+  clickRate: 8.9,
+  unsubscribeRate: 0.27,
+};
+
+// ── Campaign Report Detail ─────────────────────────────────────
+export const campaignReportLinks = [
+  { url: 'acmetechnologies.com/features/analytics', clicks: 342 },
+  { url: 'acmetechnologies.com/blog/oct-2026', clicks: 218 },
+  { url: 'acmetechnologies.com/pricing', clicks: 187 },
+  { url: 'acmetechnologies.com/docs/api', clicks: 156 },
+  { url: 'acmetechnologies.com/webinar-signup', clicks: 134 },
+];
+
+export const topEngagedContacts = [
+  { name: 'Emily Chen', email: 'emily.chen@nexuscorp.com', opens: 4, clicks: 3 },
+  { name: 'Priya Sharma', email: 'priya.sharma@cloudstack.dev', opens: 3, clicks: 2 },
+  { name: 'Sarah Thompson', email: 's.thompson@deltahealth.com', opens: 3, clicks: 2 },
+  { name: 'Daniel Kovacs', email: 'd.kovacs@eurotrade.eu', opens: 2, clicks: 2 },
+  { name: 'Monica Perez', email: 'monica.p@retailnova.com', opens: 2, clicks: 1 },
+];
