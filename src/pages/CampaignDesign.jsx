@@ -37,7 +37,7 @@ function renderBlock(block, preview) {
     case 'image':
       return (
         <div style={{ textAlign: block.content.align || 'center', padding: '8px 0' }}>
-          <div style={{ display: 'inline-block', width: block.content.width || 200, height: 80, background: '#f0f2f5', border: '2px dashed #c5cdd8', borderRadius: 6, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', color: '#a0aec0', fontSize: 13 }}>
+          <div style={{ display: 'inline-flex', width: block.content.width || 200, height: 80, background: '#f0f2f5', border: '2px dashed #c5cdd8', borderRadius: 6, alignItems: 'center', justifyContent: 'center', color: '#a0aec0', fontSize: 13 }}>
             <Image size={20} style={{ marginRight: 6 }} /> {block.content.alt || 'Image'}
           </div>
         </div>
